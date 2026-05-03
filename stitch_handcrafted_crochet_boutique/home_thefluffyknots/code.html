@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheFluffyKnots - Handmade Crochet Goodies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#253f2b",
+                        "surface-container-highest": "#e3e2df",
+                        "secondary-fixed-dim": "#d5c69d",
+                        "surface-variant": "#e3e2df",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f1f1ed",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9f6",
+                        "secondary": "#695e3d",
+                        "surface-container": "#efeeea",
+                        "tertiary-fixed": "#ffdcc2",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-fixed": "#221b02",
+                        "on-tertiary-container": "#4b3521",
+                        "primary-fixed": "#cceacf",
+                        "tertiary-fixed-dim": "#e3c0a6",
+                        "surface-bright": "#faf9f6",
+                        "tertiary-container": "#bd9d84",
+                        "on-secondary-fixed-variant": "#504627",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#424842",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf9f6",
+                        "on-secondary-container": "#6d6241",
+                        "surface-container-high": "#e9e8e5",
+                        "inverse-surface": "#2f312f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2a1707",
+                        "on-tertiary-fixed-variant": "#5a422e",
+                        "outline": "#737972",
+                        "outline-variant": "#c2c8c0",
+                        "on-surface": "#1a1c1a",
+                        "surface-tint": "#4a654f",
+                        "inverse-primary": "#b0ceb4",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#334d38",
+                        "secondary-container": "#eedfb5",
+                        "surface-dim": "#dadad7",
+                        "surface-container-low": "#f4f4f0",
+                        "on-primary-fixed": "#062010",
+                        "primary-fixed-dim": "#b0ceb4",
+                        "secondary-fixed": "#f1e1b8",
+                        "error": "#ba1a1a",
+                        "primary": "#4a654f",
+                        "tertiary": "#745944",
+                        "primary-container": "#8daa91",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Be Vietnam Pro", "sans-serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "display-lg": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .ambient-shadow { box-shadow: 0 12px 40px rgba(141, 170, 145, 0.08); }
+        .ambient-shadow-hover:hover { box-shadow: 0 20px 50px rgba(141, 170, 145, 0.12); }
+        .soft-spring { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+</head>
+<body class="font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-stone-50/90 dark:bg-stone-900/90 backdrop-blur-md text-emerald-700 dark:text-emerald-400 font-be-vietnam-pro text-sm tracking-wide fixed top-0 w-full z-50 border-b border-emerald-900/5 dark:border-stone-800 shadow-[0_8px_30px_rgb(141,170,145,0.08)]">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 py-4">
+<div class="text-2xl font-bold text-emerald-800 dark:text-emerald-100 tracking-tighter">
+                TheFluffyKnots
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-emerald-900 dark:text-emerald-50 border-b-2 border-orange-200 pb-1 font-semibold hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 px-3 py-1" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 px-3 py-1" href="#">Shop</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 px-3 py-1" href="#">Custom Orders</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 px-3 py-1" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 px-3 py-1" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4 hidden">
+<!-- Search bar hidden as per JSON -->
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="p-2 text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="contrast">contrast</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-8 py-12 md:py-20">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-6">
+<h1 class="font-display-lg text-display-lg text-on-background">Handmade Crochet Goodies 🧶</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Custom plushies, gifts &amp; decor made with love. Soft, minimalist, and perfectly imperfect.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-8 py-4 rounded-full ambient-shadow soft-spring hover:-translate-y-1">
+                            Shop Now
+                        </button>
+<button class="border-2 border-tertiary-container text-tertiary font-label-sm text-label-sm px-8 py-4 rounded-full soft-spring hover:bg-surface-container-low">
+                            Request Custom Order
+                        </button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low ambient-shadow relative">
+<img alt="Crochet Plushie" class="w-full h-full object-cover" data-alt="A soft-focus, high-key image of a handmade pastel green crochet plushie sitting on a light cream textured surface. The lighting is warm and natural, mimicking soft sunlight streaming through a window. The aesthetic is clean, tactile minimalist, emphasizing the intricate woven texture of the yarn against a generous amount of negative space. The overall mood is intimate, cozy, and nurturing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Mod1TU16qAPYN93l68CIdaA8HPGaTyRJlYk74GA6KOYMpjw6syR1GpCl3fmDeYYCMkXXEOtNC8944WutPSs1cHS_o7r4drdVT95eqtsQ8dh65nWO0IJ-8C_q-oLqyRGIq0M26ipiIAyF31VP2m1IHL8PUvlVarPIHQvVr8osdR7tPkkKclk9rdxOLunHFpUgmZYlX9whsnvVgmZW6HxAKy-Rch2AqhseH3jLrbiDn68BhZGZxMOEUtvj23W5F-0I96uQLZCl18w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Bento Grid -->
+<section class="max-w-[1200px] mx-auto px-8 py-16 bg-surface-container-lowest">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-8 text-center">Browse by Category</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Category Card 1 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[4/5] bg-surface-container ambient-shadow ambient-shadow-hover soft-spring block col-span-1 md:col-span-2 md:row-span-2" href="#">
+<img alt="Plushies" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A collection of small, cute crochet plush animals arranged on a soft, light-toned wood surface. The color palette features sun-drenched wool tones like soft peach and pale mint green. The depth of field is shallow, creating a gentle blur in the background that enhances the tactile minimalist vibe. The scene is lit with diffused, bright natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCydQGrOHUvIk33XaPgkZw2yysTg4nlfj0z1CZ-CY4JbliL3yJxj9VMSb7tsJDiaNQNAYn9c0Tqk_TgyIxO73t3RVCyaAnMVl52UhoulrmGwOUKyPySlO5II5vICtVjBGCp9SGmIYiqpH_jSdBxU3PIa05RtSGSY2BH6Nt4oJg3e8j-IV0SY3rZ1esxOEsGoD8vNC9R0DtJc6qR5aSWv0nYuXCuOPmpoUk8ez3v_hgBl9UmizDsRAqu2IDjDN0MsKyVAga9QzV5wsA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end p-6">
+<span class="font-headline-md text-headline-md text-on-background">Plushies</span>
+</div>
+</a>
+<!-- Category Card 2 -->
+<a class="group relative rounded-xl overflow-hidden aspect-square bg-tertiary-fixed ambient-shadow ambient-shadow-hover soft-spring block" href="#">
+<div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-2" data-icon="vpn_key">vpn_key</span>
+<span class="font-headline-md text-headline-md text-on-tertiary-container">Keychains</span>
+</div>
+</a>
+<!-- Category Card 3 -->
+<a class="group relative rounded-xl overflow-hidden aspect-square bg-primary-fixed ambient-shadow ambient-shadow-hover soft-spring block" href="#">
+<div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-on-primary-fixed mb-2" data-icon="home_work">home_work</span>
+<span class="font-headline-md text-headline-md text-on-primary-fixed">Decor</span>
+</div>
+</a>
+<!-- Category Card 4 -->
+<a class="group relative rounded-xl overflow-hidden aspect-[2/1] bg-secondary-container ambient-shadow ambient-shadow-hover soft-spring block col-span-1 md:col-span-2" href="#">
+<div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-2" data-icon="edit_note">edit_note</span>
+<span class="font-headline-md text-headline-md text-on-secondary-container">Custom Orders</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-[1200px] mx-auto px-8 py-16">
+<div class="flex justify-between items-end mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Featured Goodies</h2>
+<a class="font-label-sm text-label-sm text-primary hover:text-on-primary-container transition-colors" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow p-4 flex flex-col h-full relative group">
+<div class="absolute top-6 left-6 z-10 bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="tune">tune</span> Customizable
+                    </div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img alt="Cream Bear Plushie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A single, perfectly crocheted amigurumi bear sitting against a pristine white background. The yarn is a soft, warm cream color with delicate peach accents on the cheeks. The lighting is studio-quality but soft, casting gentle, ambient shadows that give the bear physical weight. The image embodies a clean, tactile minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwQdlr8FOGW6sp4pgssi3kx3kCmSJvY6AS4BggZvhMTWDow9ovGOtSxNucMyTT-uklFPGWoho7QjM6Vfx-RufXNANfiZHJVrUzv_NgBVWq2NYRE0YoNdztwlE8dMGJt8Cn7uQlSZgMPgE5HpYrPXltmNdSjTjjnRWC2DkWZdZ2bTBguiNfKlI7foYIp6ZDW73uFllyUZe3Q2Woxmhtn_6vhoXgc3moPXTpqU_rRxPg02BAaVI5OULPh0J6d0We8iFexoj3PWjwI7c"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-lg text-on-background mb-1">Cozy Cream Bear</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">₹ 850</p>
+</div>
+<button class="w-full mt-auto bg-surface border-2 border-secondary-fixed text-on-surface font-label-sm text-label-sm py-3 rounded-full flex justify-center items-center gap-2 hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span> Order via WhatsApp
+                    </button>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow p-4 flex flex-col h-full relative group">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img alt="Sage Coaster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A delicate handmade crochet coaster in a muted sage green, resting on a clean, light stone surface. Beside it is a plain white ceramic mug, partially in frame. The lighting is soft and natural, emphasizing the organic texture of the cotton yarn. The composition relies on generous white space and asymmetrical balance for a modern, calming feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFr8yvmnv7uVOIcOOZ46xGd3bs8mpyfrgAdNfWoffU5CgEHHODy0aDpjVRZNcO0BV-Drvlgxt58JAKARpRZZwtpudoJJ8ZD68kkpcZ-6OOlXf92huSKgWAOV-AoXdaK8CnKNtwpbIepbA2zp2v3uQMFKK-q4Lx7kWTnEbvhHYpZzYTKdPXSTKcbaWk1Aty27d9uetsOJ1nJNRfEMCKfRq_WxEduHi4C3h932hf2Hn9_opRetga9nFjx5UHuoUfhxVH90EhJgh0mfE"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-lg text-on-background mb-1">Sage Leaf Coaster Set</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">₹ 450</p>
+</div>
+<button class="w-full mt-auto bg-surface border-2 border-secondary-fixed text-on-surface font-label-sm text-label-sm py-3 rounded-full flex justify-center items-center gap-2 hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span> Order via WhatsApp
+                    </button>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow p-4 flex flex-col h-full relative group">
+<div class="absolute top-6 left-6 z-10 bg-surface-container-high px-3 py-1 rounded-full font-label-sm text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="tune">tune</span> Customizable
+                    </div>
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img alt="Chunky Blanket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A chunky, oversized knit/crochet blanket draped elegantly over a minimal, light-colored wooden chair. The yarn is a soft pastel peach hue. The background is a clean, off-white wall, capturing the 'Centered and Grounded' layout philosophy. The lighting highlights the thick, comforting texture of the handmade piece, evoking emotional warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_MUTqE17ZUsI1sD4W4jYm1wEGho4liYNizQ2d8izhrPmgyulke4VuXfchbLrmMbdYYi2jr-CtCFo76QiMTct7_N8TkSr2yBq4IIIZp08jFrXnIb9xR7wJqbl-_NDQhJ_7oh6jyoh8rkrDcMr8ecduh7oA5GXtsZ_epkvLgY06sxUyDyIsIT3UerSlLis55naTAmTpPoCAqg9cA7nOhkzoLx1KJ4rgwtsMYyXeaueKS5jvYdAB8Roi2VozgpVSragG13Ady0aDkY"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-lg text-on-background mb-1">Chunky Peach Throw</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">₹ 3,200</p>
+</div>
+<button class="w-full mt-auto bg-surface border-2 border-secondary-fixed text-on-surface font-label-sm text-label-sm py-3 rounded-full flex justify-center items-center gap-2 hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span> Order via WhatsApp
+                    </button>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl ambient-shadow p-4 flex flex-col h-full relative group">
+<div class="aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img alt="Wall Hanging" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="A small, intricate crochet wall hanging featuring a geometric pattern in earthy tones like deep green and pale cream. It hangs against a plain, warm white textured wall. The image is framed asymmetrically, leaving significant negative space to the right, embodying a sophisticated, gallery-like presentation of handmade crafts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqVvgLLvrk-Z3G5yx47dW_PzweeoADhW6SMwloQdn9Yt8DxtwU99scKzdb3vznJxwi9I5BRTb0ry_4mQHIwztkKsqHBD6x6D-HSuO9H26aXQygb-A4XmFYXx0bgO0xz3GvhXtCVqhW9vGIS-TWRfn68RqZBlTcfjkpuuzxBoBm7i86sQKyg5E9VZ3Q3a9WMvy1ZpAATe6d-J9gFFDkKFvFQNt2PvuSbl_lH6Ds-t85EbZYLxd33MEtNnE1pmz0OkZ8-oy6T2xAdl0"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline-md text-lg text-on-background mb-1">Earthy Wall Tapestry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">₹ 1,100</p>
+</div>
+<button class="w-full mt-auto bg-surface border-2 border-secondary-fixed text-on-surface font-label-sm text-label-sm py-3 rounded-full flex justify-center items-center gap-2 hover:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span> Order via WhatsApp
+                    </button>
+</div>
+</div>
+</section>
+<!-- About Section (Asymmetric Layout) -->
+<section class="max-w-[1200px] mx-auto px-8 py-20">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 order-2 md:order-1 relative">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low ambient-shadow w-[80%] mx-auto md:ml-0 md:mr-auto relative z-10">
+<img alt="Crocheting Hands" class="w-full h-full object-cover" data-alt="A close-up, soft-focus shot of hands actively crocheting a light pastel green yarn. The background is beautifully blurred (bokeh) revealing soft natural light and warm cream tones. The focus is entirely on the tactile interaction between the hands, the hook, and the yarn, conveying a sense of intimate, careful craftsmanship and human touch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2tWnCfGtwoy39-HWqCSMDB5h0jACOX26mnRuxu3kiyB3UE0ncGOYX2JFVFouLFuEjdJfYIiBD8Nzukh1rTdcnalKptjKQgNXUFGXYYInT9BduxcZBOYz_HKn5MfmVU-E7914cjqKRf4KQpdFr0EsVGJaQlYrJwhib066ByCH9c4jVyhywacTQlMAyX-UIsYrn228coR0Czia1yfWuHWtZYz_1zmfWI6N1VwGCZA0QZywLQv2aTD7MxYxz4vC-Rhb0McqpwjuwU44"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-2/3 aspect-square rounded-xl bg-secondary-fixed-dim -z-10 opacity-50"></div>
+</div>
+<div class="flex-1 order-1 md:order-2 space-y-6">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Stitched with Stories</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Every loop, every knot, every finished piece carries a little bit of warmth. We believe that in a fast-paced digital world, there's a profound comfort in holding something made entirely by hand.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Our materials are sourced carefully, favoring soft, durable yarns that feel like a gentle hug. Whether it's a custom plushie for a loved one or a cozy throw for your home, our creations are perfectly imperfect—just like us.
+                    </p>
+<div class="pt-4">
+<button class="text-primary font-label-sm text-label-sm border-b-2 border-primary-container pb-1 hover:text-on-primary-container transition-colors">
+                            Read Our Story
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-[800px] mx-auto px-8 py-20 text-center">
+<div class="bg-surface-container-low rounded-3xl p-12 ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-tertiary-container mb-4" data-icon="mail">mail</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Join the Knotty Club</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md mx-auto">
+                    Get updates on new collections, exclusive discounts, and behind-the-scenes craft stories.
+                </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow bg-surface border-0 rounded-full px-6 py-4 font-body-md text-on-surface focus:ring-2 focus:ring-primary-container transition-all shadow-[inset_0_2px_4px_rgba(0,0,0,0.02)] placeholder:text-outline" placeholder="Your email address" required="" type="email"/>
+<button class="bg-on-background text-surface font-label-sm px-8 py-4 rounded-full soft-spring hover:-translate-y-1 ambient-shadow whitespace-nowrap" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 text-emerald-800 dark:text-emerald-400 font-be-vietnam-pro text-xs uppercase tracking-widest w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800 flat">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-bold text-stone-900 dark:text-stone-100">
+                TheFluffyKnots
+            </div>
+<nav class="flex gap-6">
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">Shop</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">About</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">Contact</a>
+</nav>
+<div class="text-stone-500 dark:text-stone-500 opacity-80">
+                © TheFluffyKnots
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - TheFluffyKnots</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#253f2b",
+                        "surface-container-highest": "#e3e2df",
+                        "secondary-fixed-dim": "#d5c69d",
+                        "surface-variant": "#e3e2df",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f1f1ed",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9f6",
+                        "secondary": "#695e3d",
+                        "surface-container": "#efeeea",
+                        "tertiary-fixed": "#ffdcc2",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-fixed": "#221b02",
+                        "on-tertiary-container": "#4b3521",
+                        "primary-fixed": "#cceacf",
+                        "tertiary-fixed-dim": "#e3c0a6",
+                        "surface-bright": "#faf9f6",
+                        "tertiary-container": "#bd9d84",
+                        "on-secondary-fixed-variant": "#504627",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#424842",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf9f6",
+                        "on-secondary-container": "#6d6241",
+                        "surface-container-high": "#e9e8e5",
+                        "inverse-surface": "#2f312f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2a1707",
+                        "on-tertiary-fixed-variant": "#5a422e",
+                        "outline": "#737972",
+                        "outline-variant": "#c2c8c0",
+                        "on-surface": "#1a1c1a",
+                        "surface-tint": "#4a654f",
+                        "inverse-primary": "#b0ceb4",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#334d38",
+                        "secondary-container": "#eedfb5",
+                        "surface-dim": "#dadad7",
+                        "surface-container-low": "#f4f4f0",
+                        "on-primary-fixed": "#062010",
+                        "primary-fixed-dim": "#b0ceb4",
+                        "secondary-fixed": "#f1e1b8",
+                        "error": "#ba1a1a",
+                        "primary": "#4a654f",
+                        "tertiary": "#745944",
+                        "primary-container": "#8daa91",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["beVietnamPro"],
+                        "body-md": ["plusJakartaSans"],
+                        "headline-lg": ["beVietnamPro"],
+                        "body-lg": ["plusJakartaSans"],
+                        "label-sm": ["plusJakartaSans"],
+                        "display-lg": ["beVietnamPro"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-stone-50/90 dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-emerald-900/5 dark:border-stone-800 shadow-[0_8px_30px_rgb(141,170,145,0.08)] font-be-vietnam-pro text-sm tracking-wide">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 py-4">
+<a class="text-2xl font-bold text-emerald-800 dark:text-emerald-100 tracking-tighter ease-out-cubic transform active:scale-95" href="#">
+                TheFluffyKnots
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">Shop</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">Custom Orders</a>
+<!-- Active State -->
+<a class="text-emerald-900 dark:text-emerald-50 border-b-2 border-orange-200 pb-1 font-semibold" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 text-emerald-700 dark:text-emerald-400">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="p-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300 ease-out-cubic transform active:scale-95 text-emerald-700 dark:text-emerald-400">
+<span class="material-symbols-outlined" data-icon="contrast">contrast</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter mt-12 mb-24">
+<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+<div class="flex-1 space-y-6">
+<h1 class="font-display-lg text-display-lg text-on-background">
+                        Tied with <span class="text-primary italic font-light">purpose</span>,<br/>crafted with love.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        At TheFluffyKnots, we believe in the quiet magic of slow craft. Every loop, twist, and pull of yarn is a deliberate act of care, designed to bring warmth and a touch of whimsy into your daily life.
+                    </p>
+</div>
+<div class="flex-1 w-full">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-[0_20px_40px_rgb(141,170,145,0.12)]">
+<img alt="Hands crocheting" class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up, high-quality photograph of hands carefully crocheting a thick, chunky yarn blanket in a sun-drenched room. The lighting is warm and natural, casting soft, ambient shadows that highlight the texture of the pale green and cream yarn. The aesthetic perfectly matches a soft minimalism style, feeling intimate, cozy, and nurturing. The background is slightly blurred, focusing entirely on the tactile, handmade process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABmq77799b2kQRU2vEGDrCMPEMLdpHfpD9mnTCq7I1Zp3be7bnXhexO5eWgtdwi4QdMDg5sweVVGoSo48GJB9SOSu8GqJZac11yXqIDP22nTeu8eDtEyNpwVGIo6lNpFr0cqJh6GGqNvtbZh7-Ih_FrTDPDblCcun6npVN8UlQKVN3qLS6LisbZHNcdL-af2XWQ4mX0VoYuRSo53CWkxedwQnn1nwKdBbuc7--ICjy_IgjYXIdf_FRkbeq07a7ttLoQejejTkx4iw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Every stitch tells a story.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Our process is intentionally unhurried. We source the softest, ethically produced yarns to ensure that every creation isn't just beautiful, but feels like a gentle embrace.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Bento Item 1 -->
+<div class="md:col-span-8 bg-surface rounded-xl overflow-hidden flex flex-col sm:flex-row shadow-[0_8px_24px_rgb(141,170,145,0.06)]">
+<div class="sm:w-1/2 p-10 flex flex-col justify-center space-y-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="favorite">favorite</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">The Intimate Craft</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                There are no machines here. Just hands, a hook, and a deep appreciation for the rhythm of creation. This personal touch means no two pieces are exactly alike—each bears the unique signature of the moment it was made.
+                            </p>
+</div>
+<div class="sm:w-1/2 relative min-h-[300px]">
+<img alt="Crochet tools" class="absolute inset-0 w-full h-full object-cover" data-alt="An artistic flat lay photograph of crochet tools resting on a clean, light cream surface. The composition includes beautifully carved wooden crochet hooks, a pair of vintage scissors, and perfectly wound skeins of soft peach and sage green yarn. The lighting is bright and even, creating a calm, organized, and inviting atmosphere that embodies the soft minimalism and slow craft philosophy. Generous negative space surrounds the items." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHEmtsEi6D1Tv2FwS0enp8PZO_TdbUVUa7v2U16uy0DDb2jWPPlS1-isuRxVBmk0N63JsfYb8qh2y3jA6Yph1F4DaPTejZFdaDBhfAjZbRKr7GRj2YtzkLpfrMEklzPWFI8aXDxroM9lg8iIYhGz2_YyROntmFjmixoAhOD9vWoISJJM67JXPtZ_u45Se_hEMyv8kCY6QWMlO0pJAI53xUXV17qb8JG17Do25VXmFIHYFE-hwOKje6lO9pzeuDzktMm83pgIVsDis"/>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="md:col-span-4 bg-primary-container rounded-xl p-10 flex flex-col justify-between shadow-[0_8px_24px_rgb(141,170,145,0.08)]">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="eco">eco</span>
+<h3 class="font-headline-md text-headline-md text-on-primary-container">Mindful Materials</h3>
+<p class="font-body-md text-body-md text-on-primary-container/80">
+                                We prioritize natural fibers and low-impact dyes, reflecting our respect for the earth and the people who inhabit it.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Note -->
+<section class="max-w-container-max mx-auto px-gutter py-24">
+<div class="bg-surface rounded-xl p-12 lg:p-20 shadow-[0_12px_36px_rgb(141,170,145,0.05)] border border-surface-container-highest flex flex-col md:flex-row items-center gap-12">
+<div class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden shrink-0 shadow-[0_8px_24px_rgb(141,170,145,0.1)]">
+<img alt="Maker portrait" class="w-full h-full object-cover" data-alt="A soft-focus, candid portrait of a woman smiling warmly while holding a beautifully crocheted scarf. She is illuminated by gentle, diffused window light. The color palette features soft creams, gentle peaches, and muted greens, perfectly aligning with a comforting, minimalist aesthetic. The image evokes a sense of approachability, deep care, and the authentic human connection behind handmade crafts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDta8-pwOOSAGI1p7kYOUHYKTQJXSHes8mjR9FCMGDWRYNYn3u-rHGGVLCNAEsnzeDCKqCG2TtrIHFC1NyX8uZ6fw5z7cG4nOgfNeAdrhiXQ0DG_Owhv9reHz3ROAZN-poqbputxFA9ddT2PFcfopjlQMrYKOimG9TBhGx7onHfBALUUU_uMhRY1zoV3LmaxBNuzrYpuKbNVYBiIR7KeuuXwMl4SZKZ__h0WQEUMr5kFRrBoJNbRlYI-bs0JeHlWTjV16putsPYtOM"/>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline-lg text-headline-lg text-on-surface">From our hands to yours.</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                         "When I started TheFluffyKnots, it was simply about finding peace in the repetitive motion of the hook. Now, it's about sharing that sense of comfort with you. Thank you for supporting slow fashion and embracing the beauty of the handmade."
+                     </p>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest mt-4 block">
+                         — The Maker
+                     </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800 font-be-vietnam-pro text-xs uppercase tracking-widest text-emerald-800 dark:text-emerald-400 shadow-none">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-bold text-stone-900 dark:text-stone-100 opacity-80 hover:opacity-100 transition-all duration-300">
+                © TheFluffyKnots
+            </div>
+<div class="flex gap-8">
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">Shop</a>
+<a class="text-emerald-700 dark:text-emerald-300 font-bold hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">About</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300 opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

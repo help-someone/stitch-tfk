@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CrochetHaven - Custom Orders</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#334d38",
+                      "on-tertiary-container": "#473625",
+                      "surface-dim": "#dadad7",
+                      "surface-variant": "#e3e2df",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed": "#ffe17a",
+                      "surface-bright": "#faf9f6",
+                      "primary": "#4a654f",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#cceacf",
+                      "outline-variant": "#c2c8c0",
+                      "surface-container-low": "#f4f4f0",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#231b00",
+                      "tertiary-container": "#b89e88",
+                      "primary-container": "#8daa91",
+                      "on-secondary-container": "#766100",
+                      "on-primary-container": "#253f2b",
+                      "surface-tint": "#4a654f",
+                      "secondary-container": "#ffdd67",
+                      "on-surface": "#1a1c1a",
+                      "inverse-surface": "#2f312f",
+                      "surface-container-high": "#e9e8e5",
+                      "outline": "#737972",
+                      "background": "#faf9f6",
+                      "inverse-on-surface": "#f1f1ed",
+                      "tertiary-fixed": "#faddc5",
+                      "surface": "#faf9f6",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "inverse-primary": "#b0ceb4",
+                      "tertiary-fixed-dim": "#ddc2aa",
+                      "on-surface-variant": "#424842",
+                      "secondary": "#715c00",
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#b0ceb4",
+                      "secondary-fixed-dim": "#e4c451",
+                      "surface-container-highest": "#e3e2df",
+                      "surface-container": "#efeeea",
+                      "on-primary-fixed": "#062010",
+                      "on-tertiary-fixed": "#27180a",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#6f5a48",
+                      "on-tertiary-fixed-variant": "#564332",
+                      "on-background": "#1a1c1a",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#554500"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "8px",
+                      "section-gap": "80px",
+                      "grid-gutter": "16px",
+                      "grid-margin": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "h3": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "h1": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "h2": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h3": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "h1": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h2": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FAF9F6]/80 backdrop-blur-md border-b border-stone-200/50 shadow-sm shadow-[#8DAA91]/10 ease-in-out duration-300 hidden md:flex">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-12 flex justify-between items-center h-20 w-full">
+<div class="text-2xl font-bold tracking-tighter text-[#8DAA91]">CrochetHaven</div>
+<nav class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium text-stone-500 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Home</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium text-stone-500 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Shop</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium text-[#8DAA91] border-b-2 border-[#8DAA91] pb-1 hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Custom Orders</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium text-stone-500 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">About</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium text-stone-500 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Contact</a>
+</nav>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#8DAA91] cursor-pointer hover:scale-[1.02] transition-all duration-300 ease-in-out">search</span>
+<span class="material-symbols-outlined text-[#8DAA91] cursor-pointer hover:scale-[1.02] transition-all duration-300 ease-in-out">shopping_cart</span>
+<span class="material-symbols-outlined text-[#8DAA91] cursor-pointer hover:scale-[1.02] transition-all duration-300 ease-in-out">light_mode</span>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto px-grid-margin py-section-gap">
+<!-- Hero Section -->
+<section class="text-center mb-section-gap">
+<h1 class="font-h1 text-h1 text-primary mb-6">Make it Yours</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Turn your vision into a hand-stitched reality. We work with you to create one-of-a-kind crochet pieces that tell your unique story.
+            </p>
+</section>
+<!-- Process Guide -->
+<section class="mb-section-gap">
+<h2 class="font-h2 text-h2 text-center text-primary mb-12">The Custom Process</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter relative">
+<!-- Decorative line for web -->
+<div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-surface-variant -z-10"></div>
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center shadow-sm shadow-primary-container/10">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-4">1. Dream</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Share your ideas, color preferences, and sizing. We'll sketch out a concept that brings your imagination to life.
+                    </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center shadow-sm shadow-primary-container/10">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">edit</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-4">2. Stitch</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Once approved, our artisans meticulously hand-craft your piece using sustainable, premium yarns.
+                    </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center text-center shadow-sm shadow-primary-container/10">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-4">3. Deliver</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Your custom creation is carefully packaged and shipped to your door, ready to be loved for years to come.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Request Form -->
+<section class="max-w-2xl mx-auto bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-lg shadow-primary-container/5 border border-surface-variant">
+<h2 class="font-h2 text-h2 text-center text-primary mb-8">Start Your Request</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase" for="name">Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-tertiary-fixed text-on-surface p-3 transition-shadow duration-300" id="name" name="name" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase" for="email">Email</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-tertiary-fixed text-on-surface p-3 transition-shadow duration-300" id="email" name="email" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase" for="color">Preferred Color Palette</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-tertiary-fixed text-on-surface p-3 transition-shadow duration-300" id="color" name="color">
+<option>Earthy &amp; Neutral (Greens, Browns, Creams)</option>
+<option>Sunset Warmth (Peaches, Yellows, Oranges)</option>
+<option>Ocean Deep (Blues, Teals, Whites)</option>
+<option>Custom (Describe below)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-2 uppercase" for="description">Project Description</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-tertiary-fixed text-on-surface p-3 transition-shadow duration-300 resize-none" id="description" name="description" placeholder="Tell us what you're dreaming of..." rows="5"></textarea>
+</div>
+<div class="text-center pt-4">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full uppercase tracking-wider hover:scale-[1.02] transition-transform duration-300 shadow-md shadow-primary/20" type="button">
+                        Submit Request
+                    </button>
+</div>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t mt-20 border-t border-stone-100 bg-[#FAF9F6]">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-bold text-[#8DAA91]">CrochetHaven</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 hover:translate-y-[-2px] transition-transform duration-300" href="#">Shop All</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 hover:translate-y-[-2px] transition-transform duration-300" href="#">Custom Gallery</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 hover:translate-y-[-2px] transition-transform duration-300" href="#">Our Story</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 hover:translate-y-[-2px] transition-transform duration-300" href="#">Sustainability</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400 hover:text-stone-600 hover:translate-y-[-2px] transition-transform duration-300" href="#">Contact Support</a>
+</nav>
+<div class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400">© 2024 CrochetHaven. Hand-stitched with love.</div>
+</div>
+</footer>
+</body></html>

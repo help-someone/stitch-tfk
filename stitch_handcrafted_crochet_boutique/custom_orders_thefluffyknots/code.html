@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Custom Orders - TheFluffyKnots</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#253f2b",
+                        "surface-container-highest": "#e3e2df",
+                        "secondary-fixed-dim": "#d5c69d",
+                        "surface-variant": "#e3e2df",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f1f1ed",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9f6",
+                        "secondary": "#695e3d",
+                        "surface-container": "#efeeea",
+                        "tertiary-fixed": "#ffdcc2",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-fixed": "#221b02",
+                        "on-tertiary-container": "#4b3521",
+                        "primary-fixed": "#cceacf",
+                        "tertiary-fixed-dim": "#e3c0a6",
+                        "surface-bright": "#faf9f6",
+                        "tertiary-container": "#bd9d84",
+                        "on-secondary-fixed-variant": "#504627",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#424842",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#faf9f6",
+                        "on-secondary-container": "#6d6241",
+                        "surface-container-high": "#e9e8e5",
+                        "inverse-surface": "#2f312f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2a1707",
+                        "on-tertiary-fixed-variant": "#5a422e",
+                        "outline": "#737972",
+                        "outline-variant": "#c2c8c0",
+                        "on-surface": "#1a1c1a",
+                        "surface-tint": "#4a654f",
+                        "inverse-primary": "#b0ceb4",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#334d38",
+                        "secondary-container": "#eedfb5",
+                        "surface-dim": "#dadad7",
+                        "surface-container-low": "#f4f4f0",
+                        "on-primary-fixed": "#062010",
+                        "primary-fixed-dim": "#b0ceb4",
+                        "secondary-fixed": "#f1e1b8",
+                        "error": "#ba1a1a",
+                        "primary": "#4a654f",
+                        "tertiary": "#745944",
+                        "primary-container": "#8daa91",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["'Be Vietnam Pro'", "sans-serif"],
+                        "body-md": ["'Plus Jakarta Sans'", "sans-serif"],
+                        "headline-lg": ["'Be Vietnam Pro'", "sans-serif"],
+                        "body-lg": ["'Plus Jakarta Sans'", "sans-serif"],
+                        "label-sm": ["'Plus Jakarta Sans'", "sans-serif"],
+                        "display-lg": ["'Be Vietnam Pro'", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-shadow-ambient {
+            box-shadow: 0 12px 40px rgba(141, 170, 145, 0.08);
+        }
+        .custom-shadow-hover {
+            box-shadow: 0 16px 50px rgba(141, 170, 145, 0.12);
+        }
+        .custom-focus-glow:focus {
+            box-shadow: 0 0 0 4px rgba(189, 157, 132, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-stone-50/90 dark:bg-stone-900/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-emerald-900/5 dark:border-stone-800 shadow-[0_8px_30px_rgb(141,170,145,0.08)] ease-out-cubic transform active:scale-95">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-8 py-4">
+<a class="text-2xl font-bold text-emerald-800 dark:text-emerald-100 tracking-tighter" href="#">TheFluffyKnots</a>
+<div class="hidden md:flex items-center gap-8 font-be-vietnam-pro text-sm tracking-wide">
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors px-3 py-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors px-3 py-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300" href="#">Shop</a>
+<a class="text-emerald-900 dark:text-emerald-50 border-b-2 border-orange-200 pb-1 font-semibold px-3 py-2" href="#">Custom Orders</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors px-3 py-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors px-3 py-2 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4 text-emerald-700 dark:text-emerald-400">
+<button class="hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full p-2 transition-all duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 rounded-full p-2 transition-all duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">contrast</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-24 max-w-[1200px] mx-auto px-6 md:px-8">
+<!-- Hero Section -->
+<div class="max-w-3xl mb-16 md:mb-24">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Want something made just for you?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Whether it's a specific color palette to match your nursery, a custom size for a throw blanket, or a completely unique design you've been dreaming of, we can bring your vision to life with soft, tactile craftsmanship.
+            </p>
+</div>
+<!-- Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+<!-- Left Column: Instructions & Inspiration -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Image Card -->
+<div class="rounded-[2rem] overflow-hidden custom-shadow-ambient relative aspect-[4/5] bg-surface-container-high">
+<img alt="Custom crochet process" class="object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-out" data-alt="A close-up, high-quality photograph of hands carefully crocheting a textured blanket using thick, pastel peach and cream yarn. The setting is bright and airy, bathed in soft, natural window light that highlights the intricate loops and soft fuzz of the wool. The composition is intimate and tactile, embodying a warm, 'Soft Minimalism' aesthetic with a shallow depth of field focusing on the wooden crochet hook and the emerging textile pattern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTeFIYvghKHrXtFBfdL9expotUX2IaztrufYarEm6aEeK5C70tPD75EwCp5o9FdACfCBQUoCLbc4Muz5O0-Dv16wzkx6GIKcARZZ3UoLaMr6lQvpDyvpRLfTa9Z6Ky6dUvccpVyZVnhx7o7Y_TMGOdsnTJnVD56USXd7OYtaDl5y8VhiJyk1YOzoAh5kJqZK7noS5Rz2e1WH-THP5npzg8htHFoG74U2cSVEET9jxn1004BDp_fty8QA3hRVkiN_IJ8bEfLBsJg9g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent mix-blend-multiply"></div>
+</div>
+<!-- Info Cards -->
+<div class="flex flex-col gap-4">
+<div class="bg-surface-container rounded-2xl p-6 flex gap-4 items-start custom-shadow-ambient">
+<div class="bg-primary-container/20 text-primary p-3 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-xl">Color Customization</h3>
+<p class="text-on-surface-variant text-sm">Choose from our curated palette of sun-drenched wools, soft pastels, and earthy neutrals.</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-2xl p-6 flex gap-4 items-start custom-shadow-ambient">
+<div class="bg-tertiary-container/20 text-tertiary p-3 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">straighten</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-xl">Tailored Sizes</h3>
+<p class="text-on-surface-variant text-sm">From delicate baby booties to king-sized afghans, we scale our designs to fit your exact needs.</p>
+</div>
+</div>
+<div class="bg-surface-container rounded-2xl p-6 flex gap-4 items-start custom-shadow-ambient">
+<div class="bg-secondary-container/30 text-secondary p-3 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">draw</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 text-xl">Unique Designs</h3>
+<p class="text-on-surface-variant text-sm">Have a sketch or a reference photo? Let's collaborate to create a one-of-a-kind pattern.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Structured Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface rounded-[2rem] p-8 md:p-12 custom-shadow-ambient">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Start Your Custom Order</h2>
+<form class="flex flex-col gap-6">
+<!-- Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2" for="name">Full Name</label>
+<input class="w-full bg-primary/5 border-transparent rounded-xl px-5 py-4 text-on-surface placeholder:text-outline-variant transition-all duration-300 focus:bg-surface-container-lowest focus:border-tertiary-container focus:ring-0 custom-focus-glow outline-none" id="name" placeholder="How should we address you?" type="text"/>
+</div>
+<!-- Product Idea -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2" for="idea">Product Idea</label>
+<textarea class="w-full bg-primary/5 border-transparent rounded-xl px-5 py-4 text-on-surface placeholder:text-outline-variant transition-all duration-300 focus:bg-surface-container-lowest focus:border-tertiary-container focus:ring-0 custom-focus-glow outline-none resize-none" id="idea" placeholder="Describe what you have in mind... (e.g., A chunky knit throw, a set of coasters)" rows="4"></textarea>
+</div>
+<!-- Grid for Color & Size -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Color Preference -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2" for="color">Color Preference</label>
+<input class="w-full bg-primary/5 border-transparent rounded-xl px-5 py-4 text-on-surface placeholder:text-outline-variant transition-all duration-300 focus:bg-surface-container-lowest focus:border-tertiary-container focus:ring-0 custom-focus-glow outline-none" id="color" placeholder="e.g., Sage green, Warm cream" type="text"/>
+</div>
+<!-- Size -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2" for="size">Estimated Size</label>
+<input class="w-full bg-primary/5 border-transparent rounded-xl px-5 py-4 text-on-surface placeholder:text-outline-variant transition-all duration-300 focus:bg-surface-container-lowest focus:border-tertiary-container focus:ring-0 custom-focus-glow outline-none" id="size" placeholder="Dimensions or standard size" type="text"/>
+</div>
+</div>
+<!-- Budget -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2" for="budget">Estimated Budget Range</label>
+<select class="w-full bg-primary/5 border-transparent rounded-xl px-5 py-4 text-on-surface transition-all duration-300 focus:bg-surface-container-lowest focus:border-tertiary-container focus:ring-0 custom-focus-glow outline-none appearance-none cursor-pointer" id="budget">
+<option class="text-outline-variant" disabled="" selected="" value="">Select a range...</option>
+<option value="small">Under $50 (Accessories, small toys)</option>
+<option value="medium">$50 - $150 (Scarves, baby blankets)</option>
+<option value="large">$150 - $300 (Large throws, complex garments)</option>
+<option value="custom">$300+ (Intricate, large-scale projects)</option>
+</select>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 mt-8 pt-8 border-t border-surface-container-highest">
+<button class="flex-1 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-full py-4 px-8 custom-shadow-ambient hover:-translate-y-1 hover:custom-shadow-hover transition-all duration-300 ease-out text-center" type="submit">
+                                Request Custom Design
+                            </button>
+<button class="flex-1 border-2 border-tertiary-container text-tertiary-container font-label-sm text-label-sm rounded-full py-4 px-8 flex items-center justify-center gap-2 hover:bg-tertiary-container/5 transition-all duration-300 ease-out bg-transparent" type="button">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 0;">chat</span>
+                                Discuss on WhatsApp
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-8 border-t border-stone-200 dark:border-stone-800 shadow-none opacity-80 hover:opacity-100 transition-opacity duration-300 ease-out-cubic">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-bold text-stone-900 dark:text-stone-100 text-lg">
+                TheFluffyKnots
+            </div>
+<div class="flex gap-6 font-be-vietnam-pro text-xs uppercase tracking-widest">
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300" href="#">Shop</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300" href="#">About</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-orange-300 transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="text-emerald-800 dark:text-emerald-400 font-be-vietnam-pro text-xs uppercase tracking-widest">
+                © TheFluffyKnots
+            </div>
+</div>
+</footer>
+</body></html>
