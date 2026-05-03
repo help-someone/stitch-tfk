@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CrochetHaven - Handmade Crochet Goodies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#334d38",
+                        "on-tertiary-container": "#473625",
+                        "surface-dim": "#dadad7",
+                        "surface-variant": "#e3e2df",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffe17a",
+                        "surface-bright": "#faf9f6",
+                        "primary": "#4a654f",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#cceacf",
+                        "outline-variant": "#c2c8c0",
+                        "surface-container-low": "#f4f4f0",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#231b00",
+                        "tertiary-container": "#b89e88",
+                        "primary-container": "#8daa91",
+                        "on-secondary-container": "#766100",
+                        "on-primary-container": "#253f2b",
+                        "surface-tint": "#4a654f",
+                        "secondary-container": "#ffdd67",
+                        "on-surface": "#1a1c1a",
+                        "inverse-surface": "#2f312f",
+                        "surface-container-high": "#e9e8e5",
+                        "outline": "#737972",
+                        "background": "#faf9f6",
+                        "inverse-on-surface": "#f1f1ed",
+                        "tertiary-fixed": "#faddc5",
+                        "surface": "#faf9f6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b0ceb4",
+                        "tertiary-fixed-dim": "#ddc2aa",
+                        "on-surface-variant": "#424842",
+                        "secondary": "#715c00",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b0ceb4",
+                        "secondary-fixed-dim": "#e4c451",
+                        "surface-container-highest": "#e3e2df",
+                        "surface-container": "#efeeea",
+                        "on-primary-fixed": "#062010",
+                        "on-tertiary-fixed": "#27180a",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#6f5a48",
+                        "on-tertiary-fixed-variant": "#564332",
+                        "on-background": "#1a1c1a",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#554500"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "section-gap": "80px",
+                        "grid-gutter": "16px",
+                        "grid-margin": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h3": ["Plus Jakarta Sans"],
+                        "h1": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "h2": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FAF9F6]/80 backdrop-blur-md dark:bg-stone-900/80 border-b border-stone-200/50 dark:border-stone-800/50 shadow-sm shadow-[#8DAA91]/10 ease-in-out duration-300">
+<nav class="max-w-[1280px] mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+<!-- Brand -->
+<a class="text-2xl font-bold tracking-tighter text-[#8DAA91] dark:text-[#A7C4AB] font-h3 text-h3" href="#">
+                CrochetHaven
+            </a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex gap-8 items-center font-['Plus_Jakarta_Sans'] text-sm tracking-wide uppercase font-medium">
+<li>
+<a class="text-[#8DAA91] border-b-2 border-[#8DAA91] pb-1 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Home</a>
+</li>
+<li>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Shop</a>
+</li>
+<li>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Custom Orders</a>
+</li>
+<li>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">About</a>
+</li>
+<li>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">Contact</a>
+</li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4 text-[#8DAA91] dark:text-[#A7C4AB]">
+<button aria-label="Search" class="hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out p-2">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button aria-label="Cart" class="hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out p-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button aria-label="Menu" class="hover:text-[#8DAA91] hover:scale-[1.02] transition-all duration-300 ease-in-out p-2 md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-grid-margin mt-16 mb-section-gap relative rounded-xl overflow-hidden shadow-lg shadow-primary-container/10">
+<div class="absolute inset-0 z-0">
+<img alt="Crochet Plushie Background" class="w-full h-full object-cover object-center scale-105 opacity-80" data-alt="A beautifully composed, high-resolution photograph of a meticulously hand-crafted crochet plushie sitting on a clean, soft cream-colored linen surface. The plushie features vibrant but soft organic tones, perhaps a warm honey yellow and sage green. Natural, diffused sunlight streams from a nearby window, casting long, soft, ambient shadows that emphasize the tactile texture of the yarn and the delicate stitching. The mood is cozy, warm, and inviting, perfectly encapsulating a boutique, artisanal aesthetic with a light-mode, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvK3W6hfnkM0tDEHNJgA2xEKIQurC7oSXTOftoDFVX6ZAQY-XniLfpAbgtMisUo0ce2HksS5NvDlJtIgnahbOgbap1tOpInadWeoXYaYEuC1ANYcUeZNob_8c8ncsCJYlNe3oFBgFB61t89ECoDuPdM144csQPNR_BhV8DlvYSW-p9tktM11ge9Ef4ifmh6eolUQEdedA280aLrciJ0kmqN8HIvceB9Xm_lGJSq2JWWNjRknkH62Co2Ka_g6i4UtMVbx9aV4pl1Rw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-bright/90 via-surface-bright/70 to-transparent"></div>
+</div>
+<div class="relative z-10 py-24 md:py-40 px-6 md:px-16 flex flex-col items-start max-w-2xl">
+<h1 class="font-h1 text-h1 text-on-surface mb-6 leading-tight">Handmade Crochet Goodies 🧶</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Custom plushies, gifts &amp; decor made with love.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:scale-[1.02] hover:shadow-md hover:shadow-primary/20 transition-all duration-300 ease-in-out" href="#">
+                        Shop Now
+                    </a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary text-primary font-label-sm text-label-sm rounded-lg hover:bg-surface-container-low hover:scale-[1.02] transition-all duration-300 ease-in-out" href="#">
+                        Request Custom
+                    </a>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-container-max mx-auto px-grid-margin mb-section-gap">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-h2 text-h2 text-on-surface">Featured Creations</h2>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors flex items-center gap-1" href="#">
+                    View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-4 rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-6 shadow-sm shadow-primary-container/5 transition-all duration-500 ease-in-out group-hover:shadow-lg group-hover:shadow-primary-container/20 group-hover:-translate-y-1">
+<img alt="Cotton Candy Bee" class="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110" data-alt="A soft, expertly lit macro photograph of a small, hand-crocheted bee plushie. The yarn used is a pastel 'cotton candy' pink and soft cream, giving it a sweet, whimsical appearance. It rests on a pristine, minimalist white background with gentle, diffuse ambient lighting that creates a soft drop shadow, highlighting the intricate loops and knots of the crochet work. The overall vibe is artisanal, premium, and gentle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgkzEk1r8TWRdRYDgOc_s9qYMXCkXtmiFPHJrKAZZvWdyPMBZWXrCKlvmnzp-hj0rMrHnXq1PFAB9d7Z1vV581bpfu6WixXdJFxMJwtL2Lu7AxXI1mvl0-CvlnyUcd2wZLs227thkecPeQ-CjjOw-6jEQdGQg4q19FbkzqrdFk7peHjuYBBsIfLHiT3m2hlOSYKHD70AKJwb1MGKJvLmotJfGp623GwGsZv-OpDQlK0do_Kwzbg_HyQPHclHmWfwbKbJkYZWmiucc"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] rounded-full">New</span>
+</div>
+</div>
+<h3 class="font-h3 text-lg text-on-surface mb-1 group-hover:text-primary transition-colors duration-300">Cotton Candy Bee</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">$24.00</p>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-4 rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-6 shadow-sm shadow-primary-container/5 transition-all duration-500 ease-in-out group-hover:shadow-lg group-hover:shadow-primary-container/20 group-hover:-translate-y-1">
+<img alt="Forest Mushroom Friend" class="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110" data-alt="A high-quality studio shot of a hand-crafted crochet mushroom plushie. The cap is a warm, deep rust red with small cream spots, while the stem is a soft ivory. The object is centered on a muted sage green backdrop, illuminated by gentle, diffused studio lighting that creates a soft, ambient glow around the plushie. The texture of the yarn is crisp and inviting, conveying a sense of handcrafted luxury and organic warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXMYYQ7V9bsYu_3NrMVmwuEQDsks0CY2WQb4ONHrJ9QovOckBeiz__Me-4M7PDT_T-Z2nnImWpLDReB2XJThRVeteWQhZ2jKtVDRNaDphX0cUlD6DiI4NzNZxAF2riDWmuM-pOL74OAyfhyPV3UeGyZRbUv8z7BvmaxMSyB2IKsWXfpSfSPGpzxIUVdxGZJ6yhekDnlJ2ZQTIthy1rNUaLJQTTYu7lyDyqzXw1rFpewoBKutbDzlYuKUGsvsJIqwBIS7EbS0hr5g"/>
+</div>
+<h3 class="font-h3 text-lg text-on-surface mb-1 group-hover:text-primary transition-colors duration-300">Forest Mushroom Friend</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">$32.00</p>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-4 rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-6 shadow-sm shadow-primary-container/5 transition-all duration-500 ease-in-out group-hover:shadow-lg group-hover:shadow-primary-container/20 group-hover:-translate-y-1">
+<img alt="Lavender Octopus" class="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110" data-alt="A beautifully lit photograph of a handmade crochet octopus plushie, crafted from soft lavender purple yarn. The plushie features curly, spiraling tentacles and is presented on a clean, light cream surface. Soft, directional lighting highlights the dimensionality of the stitches and casts a gentle, ambient shadow to the right. The aesthetic is clean, modern, and playful, fitting perfectly into a premium handcrafted boutique context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4kwOmRFP5Y69l0AgqaIR7YHhZfmt78rnpT8xp5gT13OCzjjq2xm_R9UWmTfrN-GH6ta06qK1-H-BbLVuIsX6kaZp2CmisB4ucigQU3ReOcAcX6dptaU1Lx9PBvB-tKtLo2KLFXe35Y0G3gKSo_uJeM0sjg_aNOmuWsaNS3Xte6tH8vTdTVMyuvIgFMAkt3f7a60NEJNVSFAE16icHC_NiYVDcTZlpmvCDsU2ZtfMw0vTKmJ7fOEx1QNRkiArg3hi-KN61jHG7z3A"/>
+</div>
+<h3 class="font-h3 text-lg text-on-surface mb-1 group-hover:text-primary transition-colors duration-300">Lavender Octopus</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">$28.00</p>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-4 rounded-xl overflow-hidden bg-surface-container-low flex items-center justify-center p-6 shadow-sm shadow-primary-container/5 transition-all duration-500 ease-in-out group-hover:shadow-lg group-hover:shadow-primary-container/20 group-hover:-translate-y-1">
+<img alt="Mini Sunflower Keychain" class="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110" data-alt="A close-up, highly detailed image of a small, vibrant hand-crocheted sunflower attached to a silver keychain ring. The petals are a rich, warm honey yellow, and the center is a deep earthy brown. It rests on an airy, soft off-white background with a very subtle, diffused drop shadow that gives it a lifted, elegant appearance. The lighting is bright and natural, emphasizing the fine details of the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPlxbSll1-DvAwdC3yELf0ODAlioYbf1OhgQwvXwQ7ASyfaJ9-CJMMdBTKClsy3DtABUtFB_odAAmlhRu_1zzBPEgAqZkWQhyx0E7BqhLSyrrkks8ajKec8d3OgxthTmCtEy1Tn4uHp2YaJOuFiwaAl99FaB9Dq0m6lu25xmL0KUZtAB6u87feBOXcs0ZKgRcRuwgBmkhXGMNOVyrW8xk8LJJDLkVjXAA7QuRjnOQGY2ZgSOFhkNclvWn73mMxDsv5zCy_MjhOLNg"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] rounded-full">Bestseller</span>
+</div>
+</div>
+<h3 class="font-h3 text-lg text-on-surface mb-1 group-hover:text-primary transition-colors duration-300">Mini Sunflower Keychain</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">$15.00</p>
+</div>
+</div>
+</section>
+<!-- Categories Bento Grid -->
+<section class="max-w-container-max mx-auto px-grid-margin mb-section-gap">
+<h2 class="font-h2 text-h2 text-on-surface mb-12 text-center">Shop by Category</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<!-- Plushies (Large) -->
+<a class="md:col-span-2 relative rounded-xl overflow-hidden bg-primary-fixed-dim/20 p-8 flex flex-col justify-end group transition-all duration-500 hover:shadow-lg hover:shadow-primary-container/20" href="#">
+<div class="absolute inset-0 z-0">
+<img alt="Plushies Category" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A wide, atmospheric shot showcasing a collection of various soft, hand-crocheted plush toys arranged artfully on a light wooden shelf. The colors are muted pastels—sage greens, soft peaches, and creamy whites. The lighting is soft and natural, creating a gentle, warm ambiance. The background is slightly out of focus, drawing attention to the intricate textures of the foreground plushies. A clean, minimal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABuDQTz_CIDjcrO6u5RrLiu0YHCr-UisZOZEQ_JHZ2LPUtperG51NVASkRvb4VZgBAkltf8KC5cUqdC1rsXhJ3YS4sdgGQKdpP24Abn2N95BGoQHx_DgL3CL1HhpnS6VIGAFpg4ClyDCdvdOI9p-9vEwhbREsML2191746QgabFVwNAfjK9Lor8LwlQ3GEOF0YFjTDueBWI7oSx-L2YEpgB52pLTeOJQIFLv_QmGsS5M9F3wTaZ_9ZQs9_OZoLMmkLCHGb71YTf7s"/>
+</div>
+<div class="relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Plushies</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Cuddly companions for all ages.</p>
+</div>
+</a>
+<!-- Keychains -->
+<a class="relative rounded-xl overflow-hidden bg-secondary-fixed-dim/20 p-8 flex flex-col justify-end group transition-all duration-500 hover:shadow-lg hover:shadow-secondary-container/20" href="#">
+<div class="absolute inset-0 z-0 flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-[100px] text-secondary/20 group-hover:scale-110 transition-transform duration-700 ease-in-out">vpn_key</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Keychains</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-secondary transition-colors">Little charms on the go.</p>
+</div>
+</a>
+<!-- Decor -->
+<a class="relative rounded-xl overflow-hidden bg-tertiary-fixed-dim/20 p-8 flex flex-col justify-end group transition-all duration-500 hover:shadow-lg hover:shadow-tertiary-container/20" href="#">
+<div class="absolute inset-0 z-0 flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-[100px] text-tertiary/20 group-hover:scale-110 transition-transform duration-700 ease-in-out">home_health</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Decor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-tertiary transition-colors">Warmth for your space.</p>
+</div>
+</a>
+<!-- Custom Orders -->
+<a class="md:col-span-2 relative rounded-xl overflow-hidden bg-surface-container-high p-8 flex flex-col justify-end group transition-all duration-500 hover:shadow-lg hover:shadow-outline/10" href="#">
+<div class="absolute inset-0 z-0 flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-[120px] text-outline-variant/30 group-hover:scale-110 transition-transform duration-700 ease-in-out">draw</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Custom Orders</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Bring your vision to life.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- About Teaser -->
+<section class="max-w-3xl mx-auto px-grid-margin mb-section-gap text-center">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6">favorite</span>
+<h2 class="font-h2 text-h2 text-on-surface mb-6">Handmade with Love</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Every stitch tells a story. At CrochetHaven, we believe in the slow, intentional art of creating. Each piece is meticulously crafted using sustainable, high-quality yarns, ensuring that your new companion or decor piece isn't just beautiful, but built to last a lifetime.
+            </p>
+</section>
+<!-- Custom Order Banner -->
+<section class="w-full bg-tertiary-fixed-dim/30 py-24 mb-section-gap">
+<div class="max-w-container-max mx-auto px-grid-margin flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Have something special in mind?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">From color variations to entirely unique designs, we'd love to collaborate and create the perfect crocheted piece just for you.</p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-tertiary text-on-tertiary font-label-sm text-label-sm rounded-lg hover:scale-[1.02] hover:shadow-md hover:shadow-tertiary/20 transition-all duration-300 ease-in-out" href="#">
+                        Request Custom Order
+                    </a>
+</div>
+<div class="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg shadow-tertiary/10 relative">
+<img alt="Crochet Tools and Yarn" class="w-full h-full object-cover" data-alt="A warm, inviting flat-lay overhead photograph of a crafter's workspace. Scattered elegantly on a pristine light cream wooden table are skeins of premium, soft-textured yarn in pastel sage, warm honey, and soft peach. Several finely crafted wooden crochet hooks and a pair of vintage metal scissors rest nearby. Natural sunlight streams across the scene, casting soft, long shadows that emphasize the cozy, artisanal, and highly professional boutique aesthetic of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb0JQ2SNzjDwW5VPRE94nMZ1xXYeWI110FrXMDjWxxNCklmy4qgPcQWS3XpxBW4RbpwwZre1nOahI-TVWBbri8VGA0Cc1_JgMB3iCyKaamP-4zDZPX08Z9PvuK0Rfa0w7d0mPWpPFMuKdwMKyq8C8-16oDndCrRfQzSZLZ3r0GhSrJwzsw75CPHcr-7vgHaUjtX4IYzoCHOSBpzS6slF83LFMkmhAyRrJCz1oVxXsdXPGCiZ15ptm3Naob-H667HfDyr1gdYKL6cE"/>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="max-w-container-max mx-auto px-grid-margin mb-20">
+<div class="bg-primary-fixed-dim/20 rounded-2xl p-12 md:p-20 text-center max-w-4xl mx-auto flex flex-col items-center">
+<h2 class="font-h2 text-h2 text-on-surface mb-4">Join the Haven</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Subscribe for updates on new drops, exclusive patterns, and a little bit of coziness in your inbox.</p>
+<form class="w-full max-w-md flex flex-col sm:flex-row gap-4">
+<input class="flex-grow px-6 py-4 rounded-lg bg-surface border-none shadow-sm focus:ring-2 focus:ring-[#F9DCC4] font-body-md text-on-surface outline-none transition-all duration-300 ease-in-out" placeholder="Email address" required="" type="email"/>
+<button class="px-8 py-4 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg hover:scale-[1.02] hover:shadow-md hover:shadow-primary/20 transition-all duration-300 ease-in-out" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t mt-20 border-t border-stone-100 dark:border-stone-900 bg-[#FAF9F6] dark:bg-stone-950 subtle-fade">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-bold text-[#8DAA91] font-h3">
+                CrochetHaven
+            </div>
+<ul class="flex flex-wrap justify-center gap-6 font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400">
+<li><a class="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:translate-y-[-2px] transition-transform duration-300" href="#">Shop All</a></li>
+<li><a class="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:translate-y-[-2px] transition-transform duration-300" href="#">Custom Gallery</a></li>
+<li><a class="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:translate-y-[-2px] transition-transform duration-300" href="#">Our Story</a></li>
+<li><a class="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:translate-y-[-2px] transition-transform duration-300" href="#">Sustainability</a></li>
+<li><a class="text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:translate-y-[-2px] transition-transform duration-300" href="#">Contact Support</a></li>
+</ul>
+<div class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest text-stone-400">
+                © 2024 CrochetHaven. Hand-stitched with love.
+            </div>
+</div>
+</footer>
+</body></html>
